@@ -36,10 +36,10 @@
 
         .topic {
             width: 97vw;
-            height: 7vh;
+            height: 6vh;
             font-size: 0.8rem;
-            line-height: 7vh;
-             margin-top: 2vh; 
+            line-height: 6vh;
+            margin-top: 2vh;
             /* margin-left: 3vw; */
             margin-right: 0vw;
             padding-left: 3vw;
@@ -69,9 +69,9 @@
 
         .info-text {
             width: 100vw;
-            height: 8vh;
+            height: 7vh;
             color: #76777a;
-            line-height: 8vh;
+            line-height: 7vh;
             background-color: white;
             text-align: center;
         } 
@@ -80,7 +80,7 @@
             width: 100vw;
             height: 8vh;
             color: #76777a;
-            line-height: 8vh;
+            line-height: 6vh;
             background-color: white;
             text-align: center;
             padding-top: 3%;
@@ -104,6 +104,20 @@
         .QR-code img {
             width: 40vw;
             height: 40vw;
+        }
+        
+        .Pic {
+            width: 100vw;
+            color: #76777a;
+            background-color: white;
+            text-align: center;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        .Pic img {
+            width: 20vw;
+            height: 20vw;
         }
 
         .permit {
@@ -175,14 +189,14 @@
     <div class="content" id="content" style="display: none;">
         <div class="topic">
             <div class="topic-text"><img src='dqbm.png' />当前部门：人工智能学院        
-            <img src='arrow.png' style="width: 9px;height: 5px; padding-left: 45vw;">
+            <img src='arrow.png' style="width: 9px;height: 5px; padding-left: 50vw;">
             </div>
         </div>
         <div class="topic">
             <div class="topic-text"><img src='biao_tou.png' />请假外出、返校权限查询</div>
         </div>
 
-        <div class="infos">
+        <div class="infos" style="background: #f5f7fa">
             <div class="info">
                 <div class="info-title">姓名</div>
                 <div class="info-text" id="info-name">杨子亨</div>
@@ -190,7 +204,7 @@
 
             <div class="info">
                 <div class="info-title">照片</div>
-                <div class="QR-code"><img src='me.png' /></div>
+                <div class="Pic"><img src='avatar1.png' /></div>
                     
                 
             </div>
@@ -248,9 +262,9 @@
             else
                 curDateTime = curDateTime + "-0" + month;
             if (date > 9)
-                curDateTime = curDateTime + "-" + date;
+                curDateTime = curDateTime + "-" + date + " ";
             else
-                curDateTime = curDateTime + "-0" + date;
+                curDateTime = curDateTime + "-0" + date + " ";
             if (hours > 9)
                 curDateTime = curDateTime + "\xa0" + hours;
             else
